@@ -9,7 +9,7 @@ import Foundation
 
 enum CardError: Error { case unexpectedValue }
 
-struct Card {
+struct Card: Equatable {
 
     enum Suit: String {
         case spade   = "♠"
@@ -39,5 +39,17 @@ struct Card {
 
     var notation: String {
         return rank.rawValue + suit.rawValue
+    }
+
+    func hasSameSuit(_ card: Card) -> Bool {
+        return suit == card.suit
+    }
+
+    func hasSameRank(_ card: Card) -> Bool {
+        return rank == card.rank
+    }
+
+    static func ==(lhs: Card, rhs: Card) -> Bool {
+        return lhs.hasSameRank(rhs) && lhs.hasSameSuit(rhs)
     }
 }

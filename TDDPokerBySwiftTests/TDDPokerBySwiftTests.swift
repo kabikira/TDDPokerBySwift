@@ -10,6 +10,55 @@ import XCTest
 
 final class TDDPokerBySwiftTests: XCTestCase {
 
+    func testCardEqual() {
+
+        XCTAssertEqual(
+            Card(rank: .jack, suit: .club),
+            Card(rank: .jack, suit: .club)
+        )
+
+        XCTAssertNotEqual(
+            Card(rank: .queen, suit: .diamond),
+            Card(rank: .jack, suit: .club)
+        )
+
+        XCTAssertNotEqual(
+            Card(rank: .jack, suit: .club),
+            Card(rank: .jack, suit: .diamond)
+        )
+
+        XCTAssertNotEqual(
+            Card(rank: .jack, suit: .club),
+            Card(rank: .queen, suit: .club)
+        )
+    }
+
+    func testHasSameRank() {
+        var card1: Card
+        var card2: Card
+
+        card1 = Card(rank: .two, suit: .spade)
+        card2 = Card(rank: .two, suit: .heart)
+        XCTAssertTrue(card1.hasSameRank(card2))
+
+        card1 = Card(rank: .ace, suit: .spade)
+        card2 = Card(rank: .two, suit: .heart)
+        XCTAssertFalse(card1.hasSameRank(card2))
+    }
+
+    func testHasSameSuit() {
+        var card1: Card
+        var card2: Card
+
+        card1 = Card(rank: .ace, suit: .heart)
+        card2 = Card(rank: .two, suit: .heart)
+        XCTAssertTrue(card1.hasSameSuit(card2))
+
+        card1 = Card(rank: .ace, suit: .spade)
+        card2 = Card(rank: .two, suit: .heart)
+        XCTAssertFalse(card1.hasSameSuit(card2))
+    }
+
     func testCardNotation() {
         var card: Card
 
