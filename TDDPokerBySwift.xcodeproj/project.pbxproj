@@ -17,6 +17,7 @@
 		3BFD0B682C3372A3000F56EC /* TDDPokerBySwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD0B672C3372A3000F56EC /* TDDPokerBySwiftUITests.swift */; };
 		3BFD0B6A2C3372A3000F56EC /* TDDPokerBySwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD0B692C3372A3000F56EC /* TDDPokerBySwiftUITestsLaunchTests.swift */; };
 		3BFD0B772C3373F5000F56EC /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD0B762C3373F5000F56EC /* Card.swift */; };
+		3BFD0B792C365EA9000F56EC /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD0B782C365EA9000F56EC /* Hand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		3BFD0B672C3372A3000F56EC /* TDDPokerBySwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDPokerBySwiftUITests.swift; sourceTree = "<group>"; };
 		3BFD0B692C3372A3000F56EC /* TDDPokerBySwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDPokerBySwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3BFD0B762C3373F5000F56EC /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		3BFD0B782C365EA9000F56EC /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				3BFD0B482C3372A1000F56EC /* SceneDelegate.swift */,
 				3BFD0B4A2C3372A1000F56EC /* ViewController.swift */,
 				3BFD0B762C3373F5000F56EC /* Card.swift */,
+				3BFD0B782C365EA9000F56EC /* Hand.swift */,
 				3BFD0B4C2C3372A1000F56EC /* Main.storyboard */,
 				3BFD0B4F2C3372A3000F56EC /* Assets.xcassets */,
 				3BFD0B512C3372A3000F56EC /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BFD0B4B2C3372A1000F56EC /* ViewController.swift in Sources */,
+				3BFD0B792C365EA9000F56EC /* Hand.swift in Sources */,
 				3BFD0B472C3372A1000F56EC /* AppDelegate.swift in Sources */,
 				3BFD0B492C3372A1000F56EC /* SceneDelegate.swift in Sources */,
 				3BFD0B772C3373F5000F56EC /* Card.swift in Sources */,
